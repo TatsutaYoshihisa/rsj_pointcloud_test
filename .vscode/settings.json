@@ -1,6 +1,19 @@
 {
     "files.associations": {
-        "core": "cpp"
+        "core": "cpp",
+        "*.ipp": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "vector": "cpp",
+        "string_view": "cpp",
+        "hash_map": "cpp",
+        "hash_set": "cpp",
+        "initializer_list": "cpp"
     },
     "python.autoComplete.extraPaths": [
         "/home/ros/intern_naist_ws/devel/lib/python3/dist-packages",
