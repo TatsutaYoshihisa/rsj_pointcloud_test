@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/ros/intern_naist_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/ros/intern_naist_ws/src/joy_custom/include/**",
+        "/home/ros/intern_naist_ws/src/pointcloud_to_laserscan/include/**",
+        "/home/ros/intern_naist_ws/src/rsj_pointcloud_test/include/**",
+        "/home/ros/intern_naist_ws/src/velodyne/velodyne_driver/include/**",
+        "/home/ros/intern_naist_ws/src/velodyne/velodyne_laserscan/include/**",
+        "/home/ros/intern_naist_ws/src/velodyne/velodyne_pcl/include/**",
+        "/home/ros/intern_naist_ws/src/velodyne/velodyne_pointcloud/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

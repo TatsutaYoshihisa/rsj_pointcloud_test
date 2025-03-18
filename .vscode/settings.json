@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "core": "cpp"
+    },
+    "python.autoComplete.extraPaths": [
+        "/home/ros/intern_naist_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/ros/intern_naist_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ]
+}
