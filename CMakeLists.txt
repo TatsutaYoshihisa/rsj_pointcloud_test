@@ -234,3 +234,13 @@ target_link_libraries(rsj_pointcloud_test_node_cluster_v3
   ${catkin_LIBRARIES}
   ${PCL_LIBRARIES}
 )
+add_executable(rsj_pointcloud_test_node_cluster_v4 src/rsj_pointcloud_test_node_cluster_v4.cpp)
+target_link_libraries(rsj_pointcloud_test_node_cluster_v4
+  ${catkin_LIBRARIES}
+  ${PCL_LIBRARIES}
+)
+add_executable(rsj_pointcloud_test_node_cluster_v5 src/rsj_pointcloud_test_node_cluster_v5.cpp)
+target_link_libraries(rsj_pointcloud_test_node_cluster_v5
+  ${catkin_LIBRARIES}
+  ${PCL_LIBRARIES}
+)

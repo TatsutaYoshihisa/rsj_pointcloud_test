@@ -13,7 +13,8 @@
         "string_view": "cpp",
         "hash_map": "cpp",
         "hash_set": "cpp",
-        "initializer_list": "cpp"
+        "initializer_list": "cpp",
+        "iterator": "cpp"
     },
     "python.autoComplete.extraPaths": [
         "/home/ros/intern_naist_ws/devel/lib/python3/dist-packages",
