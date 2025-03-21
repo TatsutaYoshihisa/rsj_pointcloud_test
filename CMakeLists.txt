@@ -244,3 +244,9 @@ target_link_libraries(rsj_pointcloud_test_node_cluster_v5
   ${catkin_LIBRARIES}
   ${PCL_LIBRARIES}
 )
+add_executable(rsj_pointcloud_test_node_cluster_v6 src/rsj_pointcloud_test_node_cluster_v6.cpp)
+target_link_libraries(rsj_pointcloud_test_node_cluster_v6
+  ${catkin_LIBRARIES}
+  ${PCL_LIBRARIES}
+)
+
