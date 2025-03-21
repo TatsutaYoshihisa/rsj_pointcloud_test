@@ -71,7 +71,7 @@ private:
     
     //平面推定
     const int MAX_PLANES = 15; // 検出する平面の最大数
-    const int MIN_PLANE_POINTS = 50; // 有効な平面とみなす最小点数
+    const int MIN_PLANE_POINTS = 300; // 有効な平面とみなす最小点数
     //平面方程式と平面を抽出された点のインデックス
     pcl::ModelCoefficients::Ptr coefficients_;
     pcl::PointIndices::Ptr inliers_;
@@ -105,7 +105,7 @@ public:
 
         //Voxelフィルターとパブリッシャーの設定
         //0.025f*0.025f*0.025fの立方体の重心を計算し、その点を新しく点群としている
-        voxel_.setLeafSize(0.015f, 0.015f, 0.015f);
+        voxel_.setLeafSize(0.025f, 0.025f, 0.025f);
         cloud_voxel_.reset(new PointCloud());
         pub_voxel_ = nh_.advertise<sensor_msgs::PointCloud2>("voxel", 1);
 
@@ -126,7 +126,7 @@ public:
 
         //clusterフィルターとパブリッシャーの設定
         tree_.reset(new pcl::search::KdTree<PointT>());
-        ec_.setClusterTolerance(0.15);//同じクラスタに属するとみなす点の最大距離
+        ec_.setClusterTolerance(0.1);//同じクラスタに属するとみなす点の最大距離
         ec_.setMinClusterSize(100);//有効なクラスタとみなすための最小点数
         ec_.setMaxClusterSize(5000);//有効なクラスタとみなすための最大点数
         ec_.setSearchMethod(tree_); // KdTreeなどの検索方法を指定
@@ -259,7 +259,7 @@ public:
 
                     r = 0.0f;
                     g = 1.0f;
-                    b = 1.0f;
+                    b = 0.0f;
                     a = 0.5f;
 
                     if(is_ok){
